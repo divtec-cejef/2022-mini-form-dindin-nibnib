@@ -97,7 +97,7 @@ label input:checked+span {
 }
 
 select,
-input:not([type="radio"]) {
+input:not([type="radio"]):not([type="checkbox"]) {
 	font-size: 1.2em;
 	padding: 0.5em;
 	border: 2px solid #2B2D42;
