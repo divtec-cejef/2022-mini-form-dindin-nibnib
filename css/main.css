@@ -14,6 +14,9 @@ html {
 body {
 	max-width: 800px;
 	margin: 2rem auto;
+	background-image: url(../img/backgrounds/1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 h1 {
@@ -23,8 +26,6 @@ h1 {
 	text-shadow: 2px 2px 2px #2B2D42;
 	opacity: 80%;
 }
-
-/* h1 */
 
 a {
 	color: #EF233C;
@@ -79,7 +80,7 @@ form li:last-child {
 	margin-bottom: 0;
 }
 
-label {
+:not(.radio-button)>label {
 	font-size: 1.2em;
 	font-weight: 600;
 	margin: 0 0 0.5em;
@@ -87,7 +88,16 @@ label {
 	display: block;
 }
 
-select {
+label input+span {
+	font-weight: 300;
+}
+
+label input:checked+span {
+	font-weight: 600;
+}
+
+select,
+input:not([type="radio"]) {
 	font-size: 1.2em;
 	padding: 0.5em;
 	border: 2px solid #2B2D42;
@@ -113,4 +123,8 @@ button[type="submit"]+a {
 	display: block;
 	margin-top: 1em;
 	text-align: center;
+}
+
+input:not(:valid) {
+	border-color: #EF233C;
 }
