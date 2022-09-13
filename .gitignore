@@ -1,2 +1,5 @@
 # Ignore les fichier du projet WebStorm
 .idea/
+
+# Ignore les fichier du projet Visual Studio Code
+.vscode/
