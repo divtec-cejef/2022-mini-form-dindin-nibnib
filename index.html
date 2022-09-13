@@ -38,15 +38,23 @@
 				</select>
 			</li>
 			<li>
-				<label for="gender">Genre</label>
-				<div id="gender">
-					<label for="male">Homme</label>
-					<input type="radio" name="gender" id="male">
-					<label for="female">Femme</label>
-					<input type="radio" name="gender" id="female">
-					<label for="other">Autre</label>
-					<input type="radio" name="gender" id="other">
-				</div>
+				<fieldset id="gender">
+					<legend>Genre</legend>
+					<div class="radio-button">
+						<label>
+							<input type="radio" name="gender">
+							Homme
+						</label>
+						<label>
+							<input type="radio" name="gender">
+							Femme
+						</label>
+						<label>
+							<input type="radio" name="gender">
+							Autre
+						</label>
+					</div>
+				</fieldset>
 			</li>
 			<li>
 				<label for="email">E-mail</label>
