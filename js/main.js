@@ -1,6 +1,6 @@
-/**
- * @author Steve Fallet
- * @since 2022.09.06
+/***
+ * @author Odin Beuchat
+ * @since 2022-09-13
  */
 
 'use strict';
