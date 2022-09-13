@@ -1,46 +1,135 @@
 /* https://coolors.co/2b2d42-8d99ae-edf2f4-ef233c-d90429 */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-html {
-    font-family: Arial, sans-serif;
-    font-size: 100%;
-    font-weight: 400;
-    color: #2B2D42;
-    background-color: #EDF2F4   ;
+html,
+body {
+	padding: 0;
+	margin: 0;
 }
 
 body {
-    max-width: 800px;
-    margin: 2rem auto;
+	font-family: Arial, sans-serif;
+	font-size: 100%;
+	font-weight: 400;
+	color: #2B2D42;
+	max-width: 800px;
+	margin: 2rem auto;
+	background-color: #EDF2F4;
+	background-image: url(../img/backgrounds/1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+}
+
+h1 {
+	text-align: center;
+	font-size: 3rem;
+	color: white;
+	text-shadow: 2px 2px 2px #2B2D42;
+	opacity: 80%;
 }
 
 a {
-    color: #EF233C;
-    text-decoration: none;
+	color: #EF233C;
+	text-decoration: none;
 }
 
 a:hover {
-    color: #EDF2F4;
+	color: #EDF2F4;
 }
 
 button {
-    padding: .6rem 1rem;
-    border: none;
-    background-color: #EF233C;
-    color: #EDF2F4;
+	padding: .6rem 1rem;
+	border: none;
+	background-color: #EF233C;
+	color: #EDF2F4;
 }
 
-button:hover  {
-    background-color: #D90429;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    transition: all 0.3s ease;
+button:hover {
+	background-color: #D90429;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transition: all 0.3s ease;
 }
 
 button[type="reset"] {
-    background-color: #8D99AE;
-    color: #2B2D42;
+	background-color: #8D99AE;
+	color: #2B2D42;
 }
 
 
+/******** Formulaires **********/
+form {
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 20px;
+	margin: 2em auto 80px;
+	max-width: 450px;
+	min-width: 300px;
+	border: 6px solid #2B2D42;
+}
+
+form ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+
+form li {
+	margin: 1em 0;
+}
+
+form li:last-child {
+	margin-bottom: 0;
+}
+
+:not(.radio-button)>label {
+	font-size: 1.2em;
+	font-weight: 600;
+	margin: 0 0 0.5em;
+	cursor: pointer;
+	display: block;
+}
+
+label input+span {
+	font-weight: 300;
+}
+
+label input:checked+span {
+	font-weight: 600;
+}
+
+select,
+input:not([type="radio"]):not([type="checkbox"]) {
+	font-size: 1.2em;
+	padding: 0.5em;
+	border: 2px solid #2B2D42;
+	color: inherit;
+	width: 100%;
+}
+
+.radio-button {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-between;
+	padding: 10px;
+	flex-wrap: wrap;
+	gap: 1em;
+}
+
+button[type="submit"] {
+	margin: 1em 0 0;
+}
+
+button[type="submit"]+a {
+	display: block;
+	margin-top: 1em;
+	text-align: center;
+}
+
+select:invalid,
+input:invalid:not([type="checkbox"]) {
+	border-color: #EF233C !important;
+}
